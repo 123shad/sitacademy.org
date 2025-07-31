@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System of Information Technology Sabir Abad</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000000, #0d1b2a);
+      color: white;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(0,255,255,0.1), transparent);
+      animation: neonSweep 6s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes neonSweep {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #111;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: #00ffff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00ffff;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .text-box, .image-box {
+      flex: 1 1 45%;
+    }
+
+    .text-box h1 {
+      font-size: 48px;
+      background: linear-gradient(90deg, #00ffff, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .text-box span {
+      color: #ff007f;
+    }
+
+    .text-box p {
+      font-size: 18px;
+      color: #cccccc;
+      line-height: 1.6;
+    }
+
+    .image-box img {
+      width: 100%;
+      max-width: 500px;
+      filter: drop-shadow(0 0 30px #00ffff);
+      transform: translateX(30px);
+    }
+
+    section {
+      padding: 60px 50px;
+    }
+
+    .section-heading {
+      font-size: 36px;
+      color: #00ffff;
+      margin-bottom: 20px;
+    }
+
+    .courses, .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .course-box {
+      background: linear-gradient(145deg, #1a1a2e, #16213e);
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1 1 250px;
+      box-shadow: 0 8px 16px rgba(0, 255, 255, 0.2);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #00ffff;
+      border: 1px solid rgba(0, 255, 255, 0.2);
+    }
+
+    .course-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 24px rgba(0, 255, 255, 0.4);
+      background: linear-gradient(145deg, #0f3460, #1a1a2e);
+      color: #fff;
+    }
+
+    footer {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SIT Sabir Abad</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#it-diplomas">Courses</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#join">Join Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" id="home">
+    <div class="text-box">
+      <h1>System of Information Technology <br><span>Sabir Abad</span></h1>
+      <p>Welcome to the future of learning. We teach not just skills but how to shape the digital world. Join us and turn your curiosity into mastery!</p>
+    </div>
+    <div class="image-box">
+      <img src="cIw.gif" alt="3D Robot">
+    </div>
+  </div>
+
+  <section id="it-diplomas">
+    <div style="text-align:center; margin-bottom: 30px;">
+<h2 class="section-heading">IT Diplomas</h2>
+      <img src="Copilot_20250731_083810.png" alt="IT Diplomas" style="max-width:80%; border-radius: 10px; box-shadow: 0 0 20px #00ffff;">
+    </div>
+    
+    <div class="courses">
+      <div class="course-box">DIT - 1 Year</div>
+      <div class="course-box">BIT - 3 Months</div>
+      <div class="course-box">CIT - 6 Months</div>
+      <div class="course-box">IT - 2 Years</div>
+      <div class="course-box">Graphic Designing</div>
+      <div class="course-box">Web Development</div>
+      <div class="course-box">E-Commerce</div>
+      <div class="course-box">Video Editing</div>
+      <div class="course-box">SEO</div>
+      <div class="course-box">Freelancing</div>
+      <div class="course-box">Social Media Marketing</div>
+    </div>
+  </section>
+
+  <section id="safety-diplomas">
+    <div style="text-align:center; margin-bottom: 30px;">
+<h2 class="section-heading">Safety Diplomas</h2>
+      <img src="Copilot_20250731_084527.png" alt="Safety Diplomas" style="max-width:80%; border-radius: 10px; box-shadow: 0 0 20px #00ffff;">
+    </div>
+    
+    <div class="courses">
+      <div class="course-box">NEBOSH IGC</div>
+      <div class="course-box">IOSH Simple</div>
+      <div class="course-box">IOSH Digital</div>
+      <div class="course-box">OSHA 30 Hours</div>
+      <div class="course-box">OSHA 48 Hours</div>
+      <div class="course-box">Fire Safety</div>
+      <div class="course-box">First Aid</div>
+      <div class="course-box">Work Permit Receiver</div>
+      <div class="course-box">Risk Assessment</div>
+      <div class="course-box">Quality Control & QA</div>
+      <div class="course-box">HSE - 3 Year Diploma (PTEC Board)</div>
+      <div class="course-box">ISO 14001 Environmental Safety</div>
+      <div class="course-box">Environmental Engineering - 3 Year Diploma</div>
+      <div class="course-box">Rigger Level 1</div>
+      <div class="course-box">Rigger Level 2</div>
+      <div class="course-box">Rigger Level 3</div>
+    </div>
+  </section>
+
+  <section id="industrial">
+    <div style="text-align:center; margin-bottom: 30px;">
+      <img src="Copilot_20250731_085015.png" alt="Industrial Diplomas" style="max-width:100%; border-radius: 10px; box-shadow: 0 0 20px #00ffff;">
+    </div>
+    <h2 class="section-heading">Industrial Diplomas</h2>
+    <div class="courses">
+      <div class="course-box">Electrical - 1 Year</div>
+      <div class="course-box">Plumber - 1 Year</div>
+      <div class="course-box">Mechanical - 1 Year</div>
+      <div class="course-box">Refrigeration & AC - 1 Year</div>
+      <div class="course-box">Welding - 1 Year</div>
+      <div class="course-box">Civil Surveyor - 1 Year</div>
+      <div class="course-box">AutoCAD - 1 Year</div>
+      <div class="course-box">HVAC Technician - 1 Year</div>
+      <div class="course-box">Telecom Technician - 1 Year</div>
+      <div class="course-box">Mechanical Draftsman - 1 Year</div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2 class="section-heading">Our Team</h2>
+    <div class="team">
+      <div class="course-box">Sir Shadman – Founder & Instructor</div>
+      <div class="course-box">Miss Ayesha – Web Development Trainer</div>
+      <div class="course-box">Mr. Ali – Graphic Design Expert</div>
+      <div class="course-box">Miss Sana – SEO & Marketing Specialist</div>
+    </div>
+  </section>
+
+  <section id="contact" style="background: linear-gradient(135deg, #1a1a2e, #0f3460); border-radius: 20px; padding: 60px 50px; margin: 60px 30px; box-shadow: 0 0 25px rgba(0,255,255,0.3);">
+  <h2 class="section-heading" style="text-align:center;">Contact Us</h2>
+  <div style="display: flex; flex-direction: column; align-items: center; text-align: center; font-size: 18px; color: #ccc;">
+    <i class="fas fa-envelope" style="font-size: 24px; color: #00ffff;"></i>
+    <p style="margin: 10px 0;">info@sitsabirabad.com</p>
+
+    <i class="fas fa-phone" style="font-size: 24px; color: #00ffff;"></i>
+    <p style="margin: 10px 0;">+92 300 1234567</p>
+
+    <i class="fas fa-map-marker-alt" style="font-size: 24px; color: #00ffff;"></i>
+    <p style="margin: 10px 0;">Main Road, Sabir Abad, Karak, Pakistan</p>
+
+    <iframe src="https://www.google.com/maps?q=Sabir+Abad+Karak+Pakistan&output=embed" width="100%" height="300" frameborder="0" style="border:0; border-radius: 12px; margin-top: 20px; box-shadow: 0 0 20px rgba(0,255,255,0.2);" allowfullscreen></iframe>
+  </div>
+</section>
+
+  <section id="join">
+    <h2 class="section-heading">Join Now</h2>
+    <div style="max-width: 600px; margin: auto; text-align: center;">
+      <p style="font-size: 18px; color: #ccc;">Ready to shape your future? Fill out our form to join today!</p>
+      <form style="margin-top: 20px; display: flex; flex-direction: column; gap: 15px;">
+        <input type="text" placeholder="Your Name" style="padding: 10px; border-radius: 8px; border: none;">
+        <input type="email" placeholder="Your Email" style="padding: 10px; border-radius: 8px; border: none;">
+        <input type="tel" placeholder="Phone Number" style="padding: 10px; border-radius: 8px; border: none;">
+        <textarea placeholder="Message or Course of Interest" rows="4" style="padding: 10px; border-radius: 8px; border: none;"></textarea>
+        <button type="submit" style="padding: 10px; border: none; border-radius: 8px; background: #00ffff; color: #000; font-weight: bold; cursor: pointer;">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div style="margin-bottom: 10px;">
+      <a href="#" style="color:#00ffff; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" style="color:#00ffff; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="color:#00ffff; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="color:#00ffff; margin: 0 10px;"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" style="color:#00ffff; margin: 0 10px;"><i class="fab fa-youtube"></i></a>
+    </div>
+    &copy; 2025 System of Information Technology Sabir Abad | All rights reserved.
+  </footer>
+
+  <a href="https://wa.me/923319344080" target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; background-color: #25D366; color: white; border-radius: 50%; padding: 15px; box-shadow: 0 0 15px #25D366; font-size: 24px;">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
