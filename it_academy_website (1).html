@@ -128,7 +128,7 @@
       margin-bottom: 20px;
     }
 
-    .courses, .team {
+    .courses, .team, .projects-container {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
@@ -155,6 +155,89 @@
       color: #fff;
     }
 
+    /* Project Card Styles */
+    .project-card {
+      background: linear-gradient(145deg, #1a1a2e, #16213e);
+      border-radius: 12px;
+      overflow: hidden;
+      flex: 1 1 300px;
+      box-shadow: 0 8px 16px rgba(0, 255, 255, 0.2);
+      transition: transform 0.4s ease;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 255, 255, 0.4);
+    }
+    
+    .project-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .project-info {
+      padding: 20px;
+    }
+    
+    .project-title {
+      font-size: 20px;
+      color: #00ffff;
+      margin-bottom: 10px;
+    }
+    
+    .project-desc {
+      color: #ccc;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    
+    .project-link {
+      display: inline-block;
+      padding: 8px 15px;
+      background: #00ffff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    
+    .project-link:hover {
+      background: #ff00ff;
+    }
+
+    /* Online Classes Section */
+    .online-classes {
+      text-align: center;
+      padding: 40px;
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      border-radius: 20px;
+      margin: 40px 0;
+    }
+    
+    .class-option {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px 30px;
+      background: linear-gradient(145deg, #0f3460, #1a1a2e);
+      border-radius: 12px;
+      text-decoration: none;
+      color: #00ffff;
+      font-weight: bold;
+      font-size: 20px;
+      box-shadow: 0 8px 16px rgba(0, 255, 255, 0.3);
+      transition: all 0.3s ease;
+      border: 2px solid #00ffff;
+    }
+    
+    .class-option:hover {
+      transform: scale(1.05);
+      background: linear-gradient(145deg, #00ffff, #ff00ff);
+      color: #000;
+      box-shadow: 0 12px 24px rgba(0, 255, 255, 0.5);
+    }
+
     footer {
       background: #111;
       padding: 20px;
@@ -171,6 +254,8 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#it-diplomas">Courses</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#online-classes">Online Classes</a></li>
         <li><a href="#team">Our Team</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#join">Join Now</a></li>
@@ -187,6 +272,84 @@
       <img src="cIw.gif" alt="3D Robot">
     </div>
   </div>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-heading">Student Projects</h2>
+    <p style="text-align: center; color: #ccc; margin-bottom: 40px; font-size: 18px;">
+      Explore the amazing work created by our talented students
+    </p>
+    
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="https://placehold.co/600x400/1a1a2e/00ffff?text=Web+Project" alt="Web Development Project" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">E-Commerce Website</h3>
+          <p class="project-desc">A fully responsive e-commerce platform with payment integration, built by our Web Development students.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://placehold.co/600x400/1a1a2e/00ffff?text=Graphic+Design" alt="Graphic Design Project" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">Brand Identity Package</h3>
+          <p class="project-desc">Complete branding package including logo, business cards, and style guide created by Graphic Design students.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://placehold.co/600x400/1a1a2e/00ffff?text=Mobile+App" alt="Mobile App Project" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">Fitness Tracker App</h3>
+          <p class="project-desc">A cross-platform mobile application that helps users track their workouts and nutrition.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="https://placehold.co/600x400/1a1a2e/00ffff?text=SEO+Project" alt="SEO Project" class="project-img">
+        <div class="project-info">
+          <h3 class="project-title">SEO Campaign Results</h3>
+          <p class="project-desc">Case study showing dramatic improvement in organic traffic and rankings for a local business.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Online Classes Section -->
+  <section id="online-classes">
+    <h2 class="section-heading">Online Classes</h2>
+    <p style="text-align: center; color: #ccc; margin-bottom: 40px; font-size: 18px;">
+      Join our virtual classrooms from anywhere in the world. Click below to join your scheduled class.
+    </p>
+    
+    <div class="online-classes">
+      <a href="https://zoom.us/j/923319344080" target="_blank" class="class-option">
+        <i class="fas fa-video"></i> Join Morning Class (9:00 AM)
+      </a>
+      
+      <a href="https://zoom.us/j/923319344080" target="_blank" class="class-option">
+        <i class="fas fa-video"></i> Join Evening Class (5:00 PM)
+      </a>
+      
+      <a href="https://zoom.us/j/923319344080" target="_blank" class="class-option">
+        <i class="fas fa-video"></i> Join Weekend Class (11:00 AM)
+      </a>
+    </div>
+    
+    <div style="background: rgba(0, 255, 255, 0.1); padding: 20px; border-radius: 12px; margin-top: 40px;">
+      <h3 style="color: #00ffff; margin-bottom: 15px;">How to Join Online Classes</h3>
+      <ol style="text-align: left; color: #ccc; max-width: 600px; margin: 0 auto;">
+        <li>Click on the class time that matches your schedule</li>
+        <li>You will be redirected to Zoom (make sure you have the Zoom app installed)</li>
+        <li>Enter the meeting ID and password if prompted (provided by your instructor)</li>
+        <li>Join with audio and video to participate fully in the class</li>
+      </ol>
+    </div>
+  </section>
 
   <section id="it-diplomas">
     <div style="text-align:center; margin-bottom: 30px;">
